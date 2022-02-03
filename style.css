@@ -206,3 +206,14 @@ fieldset {
 .quality{
   border-radius: 6px 6px 0px 0px;
 }
+.orang:hover {
+  background-color: #A05720;
+}
+
+.accordionPanelTab {
+  color: #FF914D;
+}
+.accordionPanelTab:hover {
+  background-color: bisque;
+  color: bisque;
+}

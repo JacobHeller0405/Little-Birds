@@ -73,7 +73,11 @@ function showComingUp() {
 //Opens past events and hides all other panels
 function showPastEvents() {
   hidePanels();
-  document.getElementById('pastEventsContent').style.display = 'block';
+  if (document.getElementById('pastEventsContent').style.display == 'block') {
+    document.getElementById('pastEventsContent').style.display = 'none';
+  } else {
+    document.getElementById('pastEventsContent').style.display = 'block';
+  }
 }
 
 //Opens events week and hides all other panels
