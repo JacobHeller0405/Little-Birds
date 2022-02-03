@@ -6,7 +6,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("https://i.imgur.com/wPh5udb.png");
+  background-image: url("https://i.imgur.com/p3D7wTR.jpg");
 
   /* Set a specific height */
   height: 93%;
@@ -51,6 +51,7 @@ body, html {
   padding-left: 25%;
   padding-right: 25%;
   padding-top: 5%;
+  font-size: 16px;
 }
 #Owneres {
   text-align: center;
@@ -196,7 +197,7 @@ fieldset {
 }
 
 .accordionPanelContent{
-
+  font-size: 16px;
 }
 
 .our-story{
@@ -214,6 +215,6 @@ fieldset {
   color: #FF914D;
 }
 .accordionPanelTab:hover {
-  background-color: bisque;
-  color: bisque;
+  color: #b5641d;
+  cursor: pointer
 }

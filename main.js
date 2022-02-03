@@ -54,34 +54,44 @@ function resetEmail() {
   }
 }
 
-document.getElementById('comingUpContent').style.display = 'none';
-document.getElementById('pastEventsContent').style.display = 'none';
+document.getElementById('sustain').style.display = 'none';
+document.getElementById('story').style.display = 'none';
+document.getElementById('quality').style.display = 'none';
+
 
 //Hides all panels
 function hidePanels() {
-  document.getElementById('pastEventsContent').style.display = 'none';
-  document.getElementById('eventsWeekContent').style.display = 'none';
-  document.getElementById('comingUpContent').style.display = 'none';
+  document.getElementById('story').style.display = 'none';
+  document.getElementById('quality').style.display = 'none';
+  document.getElementById('sustain').style.display = 'none';
 }
 
-//Opens coming up and hides all other panels
-function showComingUp() {
-  hidePanels();
-  document.getElementById('comingUpContent').style.display = 'block';
-}
-
-//Opens past events and hides all other panels
-function showPastEvents() {
-  hidePanels();
-  if (document.getElementById('pastEventsContent').style.display == 'block') {
-    document.getElementById('pastEventsContent').style.display = 'none';
+//Opens sustain and hides all other panels
+function showSustain() {
+  if (document.getElementById('sustain').style.display == 'block') {
+    document.getElementById('sustain').style.display = 'none';
   } else {
-    document.getElementById('pastEventsContent').style.display = 'block';
+    hidePanels();
+    document.getElementById('sustain').style.display = 'block';
   }
 }
 
-//Opens events week and hides all other panels
-function showEventsWeek() {
-  hidePanels();
-  document.getElementById('eventsWeekContent').style.display = 'block';
+//Opens story and hides all other panels
+function showStory() {
+  if (document.getElementById('story').style.display == 'block') {
+    document.getElementById('story').style.display = 'none';
+  } else {
+    hidePanels();
+    document.getElementById('story').style.display = 'block';
+  }
+}
+
+//Opens quality and hides all other panels
+function showQuality() {
+  if (document.getElementById('quality').style.display == 'block') {
+    document.getElementById('quality').style.display = 'none';
+  } else {
+    hidePanels();
+    document.getElementById('quality').style.display = 'block';
+  }
 }
