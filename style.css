@@ -218,3 +218,10 @@ fieldset {
   color: #b5641d;
   cursor: pointer
 }
+.arrow {
+  font-size: 15px;
+}
+.birb {
+  height: 1px;
+  width: 1px;
+}
